@@ -1,9 +1,8 @@
 module go.redsock.ru/protoc-gen-npm
 
-go 1.23.3
+go 1.23.4
 
 require (
-	github.com/Red-Sock/toolbox v0.0.6
 	github.com/Red-Sock/trace-errors v0.0.13
 	github.com/stretchr/testify v1.9.0
 	go.redsock.ru/rerrors v0.0.2
