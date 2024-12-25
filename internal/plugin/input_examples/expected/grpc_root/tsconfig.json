@@ -1,0 +1,19 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es6",
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": [
+    "index.ts",
+    "fetch.pb.ts",
+    "control_plane_api.pb.ts",
+    "velez_api.pb.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

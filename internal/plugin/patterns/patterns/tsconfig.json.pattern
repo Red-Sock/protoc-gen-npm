@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist",
+    "module": "commonjs",
+    "target": "es6",
+    "strict": true,
+    "esModuleInterop": true,
+    "declaration": true
+  },
+  "include": [
+    "index.ts",
+    "fetch.pb.ts"{{range .ProtoFiles}},
+    "{{ . }}.pb.ts"{{ end }}
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

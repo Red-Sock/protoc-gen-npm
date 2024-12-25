@@ -1,0 +1,7 @@
+import "google/protobuf/descriptor.proto";
+
+option go_package = "./npmplugin";
+
+extend google.protobuf.FileOptions {
+  optional string npm_package = 51234;
+}

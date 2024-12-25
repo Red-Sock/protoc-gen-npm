@@ -1,0 +1,6 @@
+export * from './api/grpc/control_plane_api.pb';
+export { ControlPlane } from './api/grpc/control_plane_api.pb';
+
+export * from './api/grpc/velez_api.pb';
+export { VelezAPI } from './api/grpc/velez_api.pb';
+
