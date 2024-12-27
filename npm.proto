@@ -1,6 +1,6 @@
 import "google/protobuf/descriptor.proto";
 
-option go_package = "./npmplugin";
+option go_package = "go.redsock.ru/protoc-gen-npm";
 
 extend google.protobuf.FileOptions {
   optional string npm_package = 51234;
