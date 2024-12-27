@@ -1,4 +1,4 @@
 # RedSock config
 app_info:
     name: go.redsock.ru/protoc-gen-npm-package
-    version: v0.0.9
+    version: v0.0.10
