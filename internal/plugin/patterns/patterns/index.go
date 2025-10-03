@@ -6,6 +6,8 @@ import (
 	"text/template"
 )
 
+const protoExtension = ".proto"
+
 var (
 	//go:embed index.ts.pattern
 	indexTsPattern  string
@@ -24,7 +26,10 @@ func GenerateIndexTs(params IndexTsParams) ([]byte, error) {
 
 func trimProtoFile(files []ProtoFile) []ProtoFile {
 	for idx := range files {
-		files[idx].Name = strings.TrimRight(files[idx].Name, ".proto")
+		if strings.HasSuffix(files[idx].Name, protoExtension) {
+			files[idx].Name = files[idx].Name[:len(files[idx].Name)-len(protoExtension)]
+		}
+
 	}
 
 	for idx := range files {

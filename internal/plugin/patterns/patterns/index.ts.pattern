@@ -1,4 +1,5 @@
-{{range $protoKey, $protoFile := .ProtoFiles}}export * from './{{ $protoFile.Name}}.pb';
-{{range $serviceKey, $serviceName := $protoFile.ServiceNames }}export { {{ $serviceName }} } from './{{ $protoFile.Name }}.pb';
-{{end}}
-{{end}}
+{{- range $protoKey, $protoFile := .ProtoFiles -}}
+export * from './{{ $protoFile.Name}}.pb';
+{{- range $serviceKey, $serviceName := $protoFile.ServiceNames }}
+export { {{ $serviceName }} } from './{{ $protoFile.Name }}.pb';
+{{ end }}{{ end }}
