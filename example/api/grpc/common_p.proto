@@ -4,11 +4,7 @@ package example_api;
 
 import "npm.proto";
 
-import "common_p.proto";
-
 option go_package = "/example_api";
 option (npm_package) = "@example/api";
 
-service ControlPlane {
-  rpc DoNothing(Empty) returns (Empty) {};
-}
+message Empty {}
