@@ -6,3 +6,5 @@ export * from './{{ $protoFile.Name }}.pb';
 export { {{ $serviceName }} } from './{{ $protoFile.Name }}.pb';
 {{- end }}
 {{- end }}
+
+export * from './fetch.pb';
